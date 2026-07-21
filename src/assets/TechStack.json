@@ -55,5 +55,13 @@
     "svelte": {
         "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThW8nrazXMHVgJ185S1Vg5uYsg_jtrCwRa3w&s",
         "title": "Svelte"
+    },
+    "nodejs": {
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+        "title": "Node.js"
+    },
+    "css": {
+        "icon": "https://shanelonergan.github.io/assets/img/css.png",
+        "title": "CSS"
     }
 }
