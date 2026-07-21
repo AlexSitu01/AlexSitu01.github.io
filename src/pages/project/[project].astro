@@ -2,7 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import ProjectsCarousel from "@/components/ui/ProjectsCarousel.tsx";
 import SkillsCards from "@/components/SkillsCards.astro";
-import TechStackIcons from "@/assets/TechStack.json" assert { type: "json" };
+import TechStackIcons from "@/assets/TechStack.json" with { type: "json" };
 import Navigation from "@/components/Navigation.astro";
 export function getStaticPaths() {
   const pages = [
@@ -21,6 +21,19 @@ export function getStaticPaths() {
       ],
       techStack: [TechStackIcons.react_native, TechStackIcons.python, TechStackIcons.typescript, TechStackIcons.docker, TechStackIcons.fastapi, TechStackIcons.supabase],
       bullets: ["Highlights and features trending movies.", "Integrated a prerendered recommendation system built with a random forest model.", "Fast page performance with optimized images, caching and lazy loading.", "Dynamic bookmarking system that automatically tracks and stores all of the users bookmarked, completed and dropped movies with ratings if applicable.", "Search bar with autofill capabilities to query for any movies.", "Profile system that allows users to view the ratings of others."],
+    },
+
+    {
+      project: "song_quiz",
+      title: "Higher or Lower Song Quiz",
+      desc: "A web app game that allows users to play a song quiz game where they are presented with two songs and must guess which is more popular on Spotify. The game is played in rounds, and the user can see their score at the end of the game.",
+      roles: ["Frontend Engineer", "Backend Engineer"],
+      pictures: [
+        "/assets/project_pictures/song_quiz/home.png",
+        "/assets/project_pictures/song_quiz/game_over.png",
+      ],
+      techStack: [TechStackIcons.svelte, TechStackIcons.typescript, TechStackIcons.javascript, TechStackIcons.fastapi, TechStackIcons.docker],
+      bullets: ["Utilized Svelte for efficient frontend development.", "Implemented a FastAPI backend to handle game logic and data retrieval.", "Integrated Spotify API to fetch real-time song popularity data.", "Designed a simplistic and minimalistic UI for an engaging user experience.", "Implemented scoring system to track user performance across rounds."],
     }
 
   ];
